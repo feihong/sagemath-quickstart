@@ -8,7 +8,7 @@
 
 Create new conda environment and install SageMath into it
 
-    mamba create -n sage python=3.10
+    mamba create -n sage
     mamba activate sage
     mamba install sage jupyterlab
 
