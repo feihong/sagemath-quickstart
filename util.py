@@ -8,8 +8,12 @@ from sage.functions.trig import sin, cos, tan
 def fmt(v):
     return f'{n(v):0,.2f}'
 
-def printnum(v):
-    print(fmt(v))
+def printv(*args):
+  if len(args) == 1:
+    print(fmt(args[0]))
+  else:
+    label, value = args
+    print(f'{label} = {fmt(value)}')
 
 def radians(degrees):
     return degrees * pi/180
