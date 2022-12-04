@@ -23,3 +23,9 @@ Start JupyterLab server
 ## Notes
 
 Running Sage in VS Code works fine, but syntax highlighting will be a little off because VS Code thinks you're editing normal Python code.
+
+It's not yet possible to import `.sage` files as modules. The only officially-supported way to create reusable modules right now is to create a `.py` file and import it the same way you do in Python. However, `.py` files cannot access the Sage preparser, meaning that you must import things explicitly. To find how how to import a function for statement, use the handy `import_statements` function, e.g.
+
+    sage: import_statements(pi)
+    from sage.symbolic.constants import pi
+
