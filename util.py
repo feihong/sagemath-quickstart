@@ -12,8 +12,14 @@ def printv(*args):
   if len(args) == 1:
     print(fmt(args[0]))
   else:
-    label, value = args
-    print(f'{label} = {fmt(value)}')
+    label = args[0]
+    value = args[1]
+    if len(args) == 3:
+      units = ' ' + args[2]
+    else:
+      units = ''
+
+    print(f'{label} = {fmt(value)}{units}')
 
 def radians(degrees):
     return degrees * pi/180
