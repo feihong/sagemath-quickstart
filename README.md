@@ -6,6 +6,8 @@
 
 ## Installation
 
+### Linux
+
 Create new conda environment and install SageMath into it
 
     mamba create -n sage
@@ -13,6 +15,12 @@ Create new conda environment and install SageMath into it
     mamba install sage jupyterlab
 
 If you use VS Code to edit Sage notebooks, you must install the [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) extension.
+
+### Mac
+
+It's easiest to just download a binary: https://github.com/3-manifolds/Sage_macOS/releases
+
+Before you can use Sage from Jupyter, you must run `sage` from the command line at least once.
 
 ## Commands
 
